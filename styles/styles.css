@@ -5,6 +5,11 @@
     --background-light: #eee;
     --padding-standard: 10px;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 nav {
     background-color: var(--primary-color);
@@ -38,11 +43,6 @@ p {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); 
-    padding: 1rem;
-    background-color: var(--background-light);
-    color: var(--text-color);
     text-align: center;
 }
 aside img {
@@ -52,6 +52,7 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    float:right;
 }
 
 p { padding: 0;}
@@ -59,4 +60,12 @@ footer {
     margin-top: 15px;
     border-top: 1px solid var(--border-color);
     text-align: center;
+}
+/* Class Selectors */
+.box{
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 /10%);
+    padding: 1rem;
+    background-color: #ddd;
+
 }
