@@ -7,7 +7,7 @@
 }
 
 nav {
-    background-color: --primary-color;
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
