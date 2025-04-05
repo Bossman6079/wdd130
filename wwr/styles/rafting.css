@@ -53,7 +53,6 @@ nav a:hover {
 .hero {
     position: relative;
     height: 400px; /* Ensure a height for the hero section */
-    margin-top: 2rem; /* Add margin on top */
 }
 
 .hero img {
@@ -65,13 +64,13 @@ nav a:hover {
 /* Page Title above the Hero Section */
 .hero h1 {
     position: absolute;
-    top: -80px; /* Positioning title above the hero image */
+    top: -70px; /* Place the title above the hero image */
     left: 50%;
     transform: translateX(-50%);
     color: white;
     font-size: 3rem;
     font-weight: bold;
-    z-index: 1; /* Ensure the title is above the hero image */
+    z-index: 1; /* Make sure the title is above the image */
 }
 
 /* Mission Box Overlaying Hero Image */
@@ -81,8 +80,8 @@ nav a:hover {
     background-color: white;
     padding: 2rem;
     gap: 2rem;
-    position: absolute; /* Positioning the mission box on the hero image */
-    bottom: -50px; /* Position the box slightly below the hero image */
+    position: absolute;
+    bottom: -60px; /* Position the box just below the hero image */
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
