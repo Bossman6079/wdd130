@@ -1,114 +1,181 @@
+/* Root Variables for Color Scheme */
 :root {
-    --primary-color: #00008b;
-    --text-color: #333;
-    --background-light: #eee;
-    --padding-standard: 10px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    background-color: var(--background-light);
+    --primary-color: #024059;
+    --secondary-color: #02735E;
+    --accent-color: #F2F2F2;
+    --text-color: #333333;
+    --heading-color: #012A4A;
+    --overlay-bg: rgba(0, 0, 0, 0.4);
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  /* General Body Style */
+  body {
+    font-family: var(--font-family);
     color: var(--text-color);
-}
-
-header {
-    text-align: center;
-    background-color: white;
-}
-
-.logo {
-    max-width: 150px;
-    margin-top: 10px;
-}
-
-nav {
-    background-color: var(--primary-color);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--accent-color);
     padding: 0;
-}
-
-nav li {
-    margin: 0;
-}
-
-nav a {
-    display: block;
-    padding: 15px 25px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-nav a:hover {
-    background-color: #000066;
-}
-
-.hero {
-    background-image: url('images/hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 2rem;
-    color: white;
-    text-align: center;
-    position: relative;
-}
-
-.hero-content {
-    background-color: rgba(0, 0, 139, 0.7);
-    padding: 1rem;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: var(--heading-color);
+    margin: 1rem 0;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.hero-content img {
-    width: 150px;
-    height: auto;
-    border: 2px solid #fff;
-    margin-left: 1rem;
-}
-
-main {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: white;
-}
-
-.section-title {
-    color: var(--primary-color);
-    padding: 1rem 0;
-}
-
-main img {
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  #logo {
+    height: 60px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Container */
+  .hero {
+    position: relative;
+  }
+  
+  .hero img {
+    display: block;
     width: 100%;
-    margin: 1rem 0;
-    box-shadow: 0 0 10px gray;
-    border: 1px solid #ccc;
-}
-
-footer {
-    margin-top: 2rem;
-    padding: 1rem;
+    height: auto;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--overlay-bg);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    border-radius: 10px;
     text-align: center;
-    border-top: 1px solid #000;
-    background-color: #f0f0f0;
-}
-
-.social-icons img {
-    width: 32px;
-    margin: 0 5px;
-}
+  }
+  
+  /* Article Positioned Absolutely */
+  article {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1.5rem;
+    max-width: 800px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  article img {
+    float: right;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  article p {
+    flex: 1;
+  }
+  
+  /* Sections */
+  section {
+    background-color: white;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
+  
+  #history h2,
+  #adventure h2 {
+    color: var(--secondary-color);
+  }
+  
+  /* Adventure Images */
+  .rafting-images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .rafting-images img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Only remove underline for social media image links */
+  .social-media a {
+    text-decoration: none;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .social-media img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.2);
+  }
+  
