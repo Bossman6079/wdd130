@@ -1,181 +1,145 @@
-/* Root Variables for Color Scheme */
+/* CSS Variables */
 :root {
-    --primary-color: #024059;
-    --secondary-color: #02735E;
-    --accent-color: #F2F2F2;
-    --text-color: #333333;
-    --heading-color: #012A4A;
-    --overlay-bg: rgba(0, 0, 0, 0.4);
-    --font-family: 'Roboto', sans-serif;
-  }
-  
-  /* General Body Style */
-  body {
-    font-family: var(--font-family);
+    --primary-color: #064663;
+    --secondary-color: #ECB365;
+    --accent-color: #F7F7F7;
+    --text-color: #333;
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent-color);
     color: var(--text-color);
     max-width: 1200px;
-    margin: 0 auto;
-    background-color: var(--accent-color);
-    padding: 0;
-  }
-  
-  /* Headings */
-  h1, h2 {
-    color: var(--heading-color);
-    margin: 1rem 0;
-  }
-  
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 1rem 0;
-  }
-  
-  /* Header */
-  header {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
+    margin: auto;
+}
+
+header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    flex-wrap: wrap;
-  }
-  
-  #logo {
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: white;
+}
+
+#logo {
     height: 60px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
-    padding: 0;
+    gap: 1.5rem;
     margin: 0;
-  }
-  
-  nav a {
-    color: var(--accent-color);
+    padding: 0;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
+    font-weight: 500;
+}
+
+nav a:hover {
     text-decoration: underline;
-  }
-  
-  /* Hero Container */
-  .hero {
+}
+
+/* Hero Section */
+.hero {
     position: relative;
-  }
-  
-  .hero img {
+}
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  .hero h1 {
+}
+
+.hero h1 {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--overlay-bg);
     color: white;
+    background-color: var(--overlay-bg);
     padding: 1rem 2rem;
     font-size: 2.5rem;
     border-radius: 10px;
-    text-align: center;
-  }
-  
-  /* Article Positioned Absolutely */
-  article {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 1.5rem;
-    max-width: 800px;
-    border-radius: 10px;
+}
+
+/* Article Section */
+article {
     display: flex;
     align-items: center;
-    gap: 1rem;
-  }
-  
-  article img {
-    float: right;
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  article p {
-    flex: 1;
-  }
-  
-  /* Sections */
-  section {
     background-color: white;
-    padding: 1.5rem;
-    margin-top: 2rem;
+    margin: 2rem auto;
+    padding: 2rem;
     border-radius: 10px;
-  }
-  
-  #history h2,
-  #adventure h2 {
-    color: var(--secondary-color);
-  }
-  
-  /* Adventure Images */
-  .rafting-images {
+    gap: 2rem;
+}
+
+article img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+article p {
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+/* History and Adventure Sections */
+section {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.rafting-images {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .rafting-images img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  /* Footer */
-  footer {
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.rafting-images img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
     background-color: var(--primary-color);
-    color: var(--accent-color);
+    color: white;
     text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 3rem;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 1rem;
-  }
-  
-  /* Only remove underline for social media image links */
-  .social-media a {
-    text-decoration: none;
-  }
-  
-  .social-media {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+}
+
+.social-media {
     margin-top: 1rem;
-  }
-  
-  .social-media img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-media img:hover {
-    transform: scale(1.2);
-  }
-  
+}
+
+.social-media a img {
+    width: 30px;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* Remove underline from only social media image links */
+.social-media a {
+    text-decoration: none;
+}
