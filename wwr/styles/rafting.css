@@ -52,12 +52,13 @@ nav a:hover {
 /* Hero Section */
 .hero {
     position: relative;
+    height: 400px; /* Ensure a height for the hero section */
 }
 
 .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero h1 {
@@ -70,6 +71,7 @@ nav a:hover {
     padding: 1rem 2rem;
     font-size: 2.5rem;
     border-radius: 10px;
+    z-index: 2;
 }
 
 /* Article Section */
