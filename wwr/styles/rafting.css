@@ -61,17 +61,42 @@ nav a:hover {
     object-fit: cover;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: var(--overlay-bg);
-    padding: 1rem 2rem;
-    font-size: 2.5rem;
-    border-radius: 10px;
+/* Mission Box Overlaying Hero */
+.mission {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    gap: 2rem;
+    position: absolute; /* Positioning mission box relative to the hero image */
+    bottom: 0; /* Align it to the bottom of the hero section */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     z-index: 2;
+    transform: translateY(50%); /* Pull the mission box up */
+}
+
+.mission img {
+    width: 300px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Page Title above the hero section */
+.page-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin: 2rem 0 1rem; /* Space above and below the title */
 }
 
 /* Article Section */
