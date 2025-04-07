@@ -1,0 +1,110 @@
+/* Root Variables */
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --accent-color: #94d2bd;
+    --text-color: #001219;
+    --background-color: #e9d8a6;
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-family: var(--heading-font);
+}
+
+main {
+    padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative; 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    color: white;
+}
+
+.hero h1 {
+    position: absolute; 
+    top: 20px;
+    left: 30px;
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+}
+
+.hero article {
+    position: absolute; 
+    bottom: 20px;
+    left: 30px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.hero article img {
+    float: right; 
+    margin-left: 10px;
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    margin: 2rem 0;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+section img {
+    width: 150px;
+    margin: 0.5rem;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a img {
+    height: 30px;
+    margin: 0 10px;
+    text-decoration: none;
+}
