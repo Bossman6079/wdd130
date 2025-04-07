@@ -71,13 +71,6 @@ main {
 }
 
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  
 .hero article img {
     display: block;
     float: right; 
