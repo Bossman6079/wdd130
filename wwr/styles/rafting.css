@@ -71,9 +71,10 @@ main {
 }
 
 .hero article img {
+    display: block;
     float: right; 
     margin-left: 10px;
-    width: 120px;
+    width: 100%;
     height: auto;
     border-radius: 5px;
 }
