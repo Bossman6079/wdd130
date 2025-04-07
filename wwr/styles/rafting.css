@@ -43,7 +43,7 @@ main {
 
 /* Hero Section */
 .hero {
-    position: relative;
+    position: relative; /* Ensures that the child elements can be positioned absolutely */
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center;
@@ -54,7 +54,7 @@ main {
 }
 
 .hero h1 {
-    position: absolute;
+    position: absolute; 
     top: 20px;
     left: 30px;
     font-size: 2.5rem;
@@ -62,7 +62,7 @@ main {
 }
 
 .hero article {
-    position: absolute;
+    position: absolute; 
     bottom: 20px;
     left: 30px;
     width: 300px;
@@ -72,7 +72,7 @@ main {
 }
 
 .hero article img {
-    float: right;
+    float: right; 
     margin-left: 10px;
     width: 120px;
     height: auto;
