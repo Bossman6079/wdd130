@@ -44,7 +44,6 @@ main {
 /* Hero Section */
 .hero {
     position: relative; /* Ensures that the child elements can be positioned absolutely */
-    background-image: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
