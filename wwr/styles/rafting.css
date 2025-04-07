@@ -44,7 +44,7 @@ main {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url("../images/rafting-hero.jpg");
+    background-image: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
