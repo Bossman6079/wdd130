@@ -228,3 +228,8 @@ iframe {
     height: 450px;
     border: none;
 }
+
+.map-frame {
+    border: 0;
+}
+
