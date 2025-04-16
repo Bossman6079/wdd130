@@ -1,16 +1,15 @@
-/* Root Variables with Improved Contrast */
+/* Root Variables with Improved Contrast (AA Compliant) */
 :root {
-    --primary-color: #003049;            
-    --secondary-color: #005f73;          
-    --accent-color: #80ed99;            
-    --text-color: #000000;               
-    --background-color: #ffffff;         
-    --light-text: #ffffff;               
+    --primary-color: #002b36;           /* Dark blue for strong contrast */
+    --secondary-color: #004e64;         /* Dark teal */
+    --accent-color: #2ec4b6;            /* Bright teal */
+    --text-color: #000000;              /* Black text */
+    --background-color: #ffffff;        /* White background */
+    --light-text: #ffffff;              /* White for light-on-dark text */
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Roboto', sans-serif;
   }
   
-  /* General Styling */
   body {
     font-family: var(--body-font);
     margin: 0;
@@ -20,7 +19,6 @@
     line-height: 1.6;
   }
   
-  /* Header */
   header {
     background-color: var(--primary-color);
     display: grid;
@@ -53,10 +51,9 @@
   
   nav a:hover {
     background-color: var(--accent-color);
-    color: var(--text-color);
+    color: var(--primary-color);
   }
   
-  /* Hero Section */
   .hero {
     position: relative;
     height: 400px;
@@ -77,7 +74,7 @@
     text-align: center;
     color: var(--light-text);
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
     padding: 2rem;
     border-radius: 8px;
   }
@@ -87,41 +84,28 @@
     font-family: var(--heading-font);
   }
   
-  /* History Section */
-  .history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  .history, .adventures {
     margin: 3rem auto;
     max-width: 1200px;
     padding: 0 2rem;
   }
   
-  .history h2 {
-    grid-column: 1 / -1;
+  .history h2, .adventures h2 {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: var(--primary-color);
+  }
+  
+  .history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
   
   .history p {
     margin: 0;
     text-align: justify;
-  }
-  
-  /* Adventures Section */
-  .adventures {
-    margin: 3rem auto;
-    max-width: 1200px;
-    padding: 0 2rem;
-  }
-  
-  .adventures h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--primary-color);
   }
   
   .adventures-grid {
@@ -155,7 +139,6 @@
     font-weight: bold;
   }
   
-  /* Footer */
   footer {
     background-color: var(--primary-color);
     color: var(--light-text);
@@ -179,7 +162,6 @@
     transform: scale(1.1);
   }
   
-  /* Contact Info & Form */
   .contact-info, .employee-profiles, .contact-form {
     margin: 2rem auto;
     padding: 1rem;
@@ -208,10 +190,11 @@
   .contact-form textarea {
     padding: 0.5rem;
     border-radius: 4px;
-    border: 1px solid #999;
+    border: 1px solid #333;
     width: 100%;
     font-size: 1rem;
     color: var(--text-color);
+    background-color: var(--background-color);
   }
   
   .contact-form button {
@@ -225,21 +208,15 @@
   }
   
   .contact-form button:hover {
-    background-color: #001f2b;
+    background-color: #00141b;
   }
   
-  /* Map */
   iframe {
     width: 100%;
     height: 450px;
     border: none;
   }
   
-  .map-frame {
-    border: 0;
-  }
-  
-  /* CTA Section */
   .cta {
     text-align: center;
     padding: 2rem;
@@ -253,9 +230,8 @@
     border-radius: 0.5rem;
   }
   
-  /* Newsletter */
   .newsletter {
-    background-color: var(--light-text);
+    background-color: var(--background-color);
     padding: 2rem;
     text-align: center;
     color: var(--text-color);
@@ -273,10 +249,11 @@
   .newsletter button {
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid #999;
+    border: 1px solid #444;
+    color: var(--text-color);
+    background-color: var(--background-color);
   }
   
-  /* Grid Layout */
   .grid-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -294,7 +271,6 @@
     text-align: center;
   }
   
-  /* Trips Grid Section */
   .trip-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -309,13 +285,12 @@
   
   .trip {
     text-align: center;
-    background-color: var(--light-text);
+    background-color: var(--background-color);
     padding: 1rem;
     border-radius: 1rem;
     color: var(--text-color);
   }
   
-  /* Trips Table */
   .trip-table {
     padding: 2rem;
     text-align: center;
@@ -329,7 +304,7 @@
   .trip-table th,
   .trip-table td {
     padding: 0.75rem;
-    border: 1px solid #ccc;
+    border: 1px solid #666;
   }
   
   .trip-table th {
@@ -337,7 +312,6 @@
     color: var(--light-text);
   }
   
-  /* General CTA Button */
   .btn {
     display: inline-block;
     margin-top: 1rem;
