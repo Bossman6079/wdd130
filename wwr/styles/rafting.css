@@ -309,7 +309,15 @@
     font-family: 'Montserrat', sans-serif;
     color: #003049; 
     margin-bottom: 1rem;
+  }
+
+   
+  .trip img {
     width: 100%;
+    border-radius: 0.5rem;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 0.5rem;
   }
 
   .trip h3 {
@@ -317,14 +325,6 @@
     font-family: 'Montserrat', sans-serif;
     color: #005f73; 
     margin: 1rem 0 0.5rem;
-  }
-  
-  .trip img {
-    width: 100%;
-    border-radius: 0.5rem;
-    height: 300px; 
-    object-fit: cover;
-    border-radius: 0.5rem;
   }
   
   .trip {
