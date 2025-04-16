@@ -307,22 +307,22 @@
     text-align: center;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
-    color: #003049; /* strong contrast against white */
+    color: #003049; 
     margin-bottom: 1rem;
+    width: 100%;
   }
 
   .trip h3 {
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
-    color: #005f73; /* contrasts well on light bg */
+    color: #005f73; 
     margin: 1rem 0 0.5rem;
   }
   
   .trip img {
     width: 100%;
     border-radius: 0.5rem;
-    width: 100%;
-    height: 200px; 
+    height: 300px; 
     object-fit: cover;
     border-radius: 0.5rem;
   }
