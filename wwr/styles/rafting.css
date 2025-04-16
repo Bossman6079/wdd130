@@ -321,6 +321,10 @@
   .trip img {
     width: 100%;
     border-radius: 0.5rem;
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 0.5rem;
   }
   
   .trip {
