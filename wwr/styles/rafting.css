@@ -279,4 +279,50 @@ iframe {
   .grid-item {
     text-align: center;
   }
+  /* Trips Grid Section */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .trip img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  .trip {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
   
+  /* Trips Table */
+  .trip-table {
+    padding: 2rem;
+    text-align: center;
+  }
+  .trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .trip-table th,
+  .trip-table td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+  }
+  .trip-table th {
+    background-color: #0077cc;
+    color: white;
+  }
+  
+  /* CTA Button */
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+  }
