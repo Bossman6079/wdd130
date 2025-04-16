@@ -279,7 +279,7 @@ iframe {
   .grid-item {
     text-align: center;
   }
-  /* Trips Grid Section */
+ /* Trips Grid Section */
 .trip-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -326,3 +326,4 @@ iframe {
     text-decoration: none;
     border-radius: 0.5rem;
   }
+  
