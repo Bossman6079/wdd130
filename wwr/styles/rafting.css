@@ -1,8 +1,8 @@
 /* Root Variables */
 :root {
-    --primary-color: #005f73;
-    --secondary-color: #0a9396;
-    --accent-color: #94d2bd;
+    --primary-color: #003f4e; /* Darker for better contrast */
+    --secondary-color: #0a5360; /* Also darker */
+    --accent-color: #bce3d1; /* Lighter accent for better contrast */
     --text-color: #001219;
     --background-color: #e9d8a6;
     --heading-font: 'Montserrat', sans-serif;
@@ -40,7 +40,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #f8f8f8;
     text-decoration: none;
     font-family: var(--heading-font);
     font-weight: 500;
@@ -65,15 +65,25 @@ nav a:hover {
     object-fit: cover;
 }
 
-.hero-content {
+.hero::before {
+    content: "";
     position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 2rem;
     border-radius: 8px;
 }
@@ -152,7 +162,7 @@ figcaption {
     font-weight: bold;
 }
 
-/* Updated Footer */
+/* Footer */
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -176,7 +186,7 @@ footer {
     transform: scale(1.1);
 }
 
-
+/* Contact & Employee Sections */
 .contact-info, .employee-profiles, .contact-form {
     margin: 2rem auto;
     padding: 1rem;
@@ -194,6 +204,7 @@ footer {
     text-align: center;
 }
 
+/* Contact Form */
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -210,7 +221,7 @@ footer {
 }
 
 .contact-form button {
-    background-color: #0288d1;
+    background-color: #0277bd;
     color: white;
     padding: 0.7rem;
     border: none;
@@ -220,7 +231,7 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #0277bd;
+    background-color: #015e97;
 }
 
 iframe {
@@ -237,93 +248,103 @@ iframe {
 .cta {
     text-align: center;
     padding: 2rem;
-  }
-  .cta .btn {
+}
+
+.cta .btn {
     padding: 0.75rem 1.5rem;
-    background-color: #0077cc;
+    background-color: #005fa3;
     color: white;
     text-decoration: none;
     border-radius: 0.5rem;
-  }
-  
-  /* Newsletter */
-  .newsletter {
+}
+
+/* Newsletter */
+.newsletter {
     background-color: #f0f0f0;
     padding: 2rem;
     text-align: center;
-  }
-  .newsletter form {
+}
+
+.newsletter form {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     max-width: 400px;
     margin: auto;
-  }
-  .newsletter input, .newsletter button {
+}
+
+.newsletter input, .newsletter button {
     padding: 0.5rem;
     font-size: 1rem;
-  }
-  
-  /* Grid Layout */
-  .grid-info {
+}
+
+/* Grid Layout */
+.grid-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 2rem;
-  }
-  .grid-item img {
+}
+
+.grid-item img {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
-  }
-  .grid-item {
+}
+
+.grid-item {
     text-align: center;
-  }
- /* Trips Grid Section */
+}
+
+/* Trips Grid Section */
 .trip-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 2rem;
-  }
-  .trip img {
+}
+
+.trip img {
     width: 100%;
     border-radius: 0.5rem;
-  }
-  .trip {
+}
+
+.trip {
     text-align: center;
     background-color: #f7f7f7;
     padding: 1rem;
     border-radius: 1rem;
-  }
-  
-  /* Trips Table */
-  .trip-table {
+}
+
+/* Trips Table */
+.trip-table {
     padding: 2rem;
     text-align: center;
-  }
-  .trip-table table {
+}
+
+.trip-table table {
     width: 100%;
     border-collapse: collapse;
-  }
-  .trip-table th,
-  .trip-table td {
+}
+
+.trip-table th,
+.trip-table td {
     padding: 0.75rem;
     border: 1px solid #ccc;
-  }
-  .trip-table th {
-    background-color: #0077cc;
+}
+
+.trip-table th {
+    background-color: #005fa3;
     color: white;
-  }
-  
-  /* CTA Button */
-  .btn {
+}
+
+/* CTA Button */
+.btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background-color: #0077cc;
+    background-color: #005fa3;
     color: white;
     text-decoration: none;
     border-radius: 0.5rem;
-  }
-  
+}
