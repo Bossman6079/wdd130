@@ -1,0 +1,18 @@
+export const C = {
+  black:      "#0A0A0A",
+  blackSoft:  "#111111",
+  gold:       "#C9A84C",
+  goldLight:  "#E8C96A",
+  goldDark:   "#8B6914",
+  goldPale:   "#F2DC8B",
+  amber:      "#8B4513",
+  amberLight: "#B05A2A",
+  ivory:      "#F5F0E8",
+  ivoryDim:   "#C8C0B0",
+  brown:      "#4A2C0A",
+  brownDark:  "#2A1800",
+  red:        "#8B1A1A",
+  redDeep:    "#5C0A0A",
+  skin:       "#6B3A2A",
+  skinLight:  "#8B5A3A",
+} as const;
