@@ -11,6 +11,7 @@ const navGroups = [
       { href: '/graph?q=Financial+Stability', label: 'Knowledge Graph', icon: '🕸', desc: 'Interactive theory networks' },
       { href: '/timeline', label: 'Evolution Timeline', icon: '📅', desc: 'How fields evolved over time' },
       { href: '/chat', label: 'Talk to a Field', icon: '💬', desc: 'Chat with the entire literature' },
+      { href: '/trends', label: 'Emerging Trends', icon: '🚀', desc: 'AI-predicted rising research areas' },
     ],
   },
   {
@@ -19,6 +20,10 @@ const navGroups = [
       { href: '/gaps', label: 'Gap Finder', icon: '🔍', desc: 'Find unexplored research areas' },
       { href: '/methodology', label: 'Methodology AI', icon: '⚙️', desc: 'Econometric method recommender' },
       { href: '/variables', label: 'Variable Database', icon: '📊', desc: 'Proxies, formulas & datasets' },
+      { href: '/review', label: 'Literature Review', icon: '📝', desc: 'AI-generated academic reviews' },
+      { href: '/supervisor', label: 'AI Supervisor', icon: '🎓', desc: 'Proposal critique & scoring' },
+      { href: '/journals', label: 'Journal Intelligence', icon: '📰', desc: 'Find the right journal' },
+      { href: '/datasets', label: 'Dataset Hub', icon: '🗄', desc: 'Curated research datasets' },
     ],
   },
 ];
