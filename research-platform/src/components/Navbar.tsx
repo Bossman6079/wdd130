@@ -8,6 +8,7 @@ const navGroups = [
     label: 'Discover',
     links: [
       { href: '/research?q=Financial+Stability', label: 'Research Engine', icon: '🧠', desc: 'AI-synthesized field reports' },
+      { href: '/papers', label: 'Paper Database', icon: '📄', desc: 'Search landmark papers by field' },
       { href: '/graph?q=Financial+Stability', label: 'Knowledge Graph', icon: '🕸', desc: 'Interactive theory networks' },
       { href: '/timeline', label: 'Evolution Timeline', icon: '📅', desc: 'How fields evolved over time' },
       { href: '/chat', label: 'Talk to a Field', icon: '💬', desc: 'Chat with the entire literature' },
