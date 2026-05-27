@@ -12,6 +12,7 @@ const navGroups = [
       { href: '/timeline', label: 'Evolution Timeline', icon: '📅', desc: 'How fields evolved over time' },
       { href: '/chat', label: 'Talk to a Field', icon: '💬', desc: 'Chat with the entire literature' },
       { href: '/trends', label: 'Emerging Trends', icon: '🚀', desc: 'AI-predicted rising research areas' },
+      { href: '/forecast', label: 'AI Forecasting', icon: '🔮', desc: 'Publication velocity & citations' },
     ],
   },
   {
@@ -24,6 +25,14 @@ const navGroups = [
       { href: '/supervisor', label: 'AI Supervisor', icon: '🎓', desc: 'Proposal critique & scoring' },
       { href: '/journals', label: 'Journal Intelligence', icon: '📰', desc: 'Find the right journal' },
       { href: '/datasets', label: 'Dataset Hub', icon: '🗄', desc: 'Curated research datasets' },
+      { href: '/visualize', label: 'Visualization Studio', icon: '🎨', desc: 'Generate research diagrams' },
+    ],
+  },
+  {
+    label: 'Community',
+    links: [
+      { href: '/collaborate', label: 'Collaboration Hub', icon: '🤝', desc: 'Find co-authors & discuss' },
+      { href: '/workspace', label: 'My Workspace', icon: '💼', desc: 'Saved topics, citations & XP' },
     ],
   },
 ];
